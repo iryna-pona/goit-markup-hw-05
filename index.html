@@ -228,9 +228,7 @@
                   <li class="team-social-item">
                     <a class="team-social-link" href="" target="_blank">
                       <svg class="team-social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram">
-                        </use>
+                        <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -474,18 +472,63 @@
         <div class="footer-subscribe-box">
           <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-subscribe-form">
-            <label><input type="email" name="user-email" id="user-email" class="footer-input" placeholder="E-mail"></label>
-            <button type="submit" class="footer-button">Subscribe
+            <label class="footer-subscribe-option">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="footer-input"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-button">
+              Subscribe
               <svg class="footer-button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-open">
-      <div class="modal"></div>
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-input-box">
+            <label for="user-name" class="modal-input-label">Name</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              id="user-name"
+            />
+          </div>
+          <div class="modal-input-box">
+            <label for="user-phone" class="modal-input-label">Phone</label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-phone"
+              id="user-phone"
+            />
+          </div>
+          <div class="modal-input-box">
+            <label for="user-email" class="modal-input-label">Email</label>
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              id="user-email"
+            />
+          </div>
+          <button class="submit">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
