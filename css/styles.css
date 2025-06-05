@@ -620,6 +620,16 @@ img {
   margin-bottom: 8px;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -627,6 +637,16 @@ img {
   height: 40px;
   background-color: transparent;
   padding-left: 38px;
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-input.modal-comment {
+  height: 120px;
+  padding: 8px 16px;
 }
 
 .modal-input-label {
@@ -637,4 +657,42 @@ img {
   color: #8e8f99;
   display: inline-block;
   margin-bottom: 4px;
+}
+
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.hero-button.modal-button {
+  bottom: 0;
+}
+
+.check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.check-element {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-text .check-element {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  fill: #f4f4fd;
 }
